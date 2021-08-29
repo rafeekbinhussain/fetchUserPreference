@@ -1,8 +1,8 @@
 package com.preference.userprofile.service.serviceimpl;
 
 import com.preference.userprofile.configreader.FeatureToggle;
-import com.preference.userprofile.repository.daomodels.Preference;
 import com.preference.userprofile.repository.PreferenceRepository;
+import com.preference.userprofile.repository.daomodels.Preference;
 import com.preference.userprofile.service.PreferenceService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
