@@ -1,4 +1,4 @@
-package com.preference.userprofile.repository.DaoModels;
+package com.preference.userprofile.repository.daomodels;
 
 
 import lombok.*;

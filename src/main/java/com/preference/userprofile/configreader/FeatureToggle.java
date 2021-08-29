@@ -1,4 +1,4 @@
-package com.preference.userprofile.ConfigReader;
+package com.preference.userprofile.configreader;
 
 
 import jakarta.validation.constraints.NotEmpty;

@@ -1,7 +1,7 @@
-package com.preference.userprofile.service.serviceImpl;
+package com.preference.userprofile.service.serviceimpl;
 
-import com.preference.userprofile.ConfigReader.FeatureToggle;
-import com.preference.userprofile.repository.DaoModels.Preference;
+import com.preference.userprofile.configreader.FeatureToggle;
+import com.preference.userprofile.repository.daomodels.Preference;
 import com.preference.userprofile.repository.PreferenceRepository;
 import com.preference.userprofile.service.PreferenceService;
 import lombok.extern.slf4j.Slf4j;

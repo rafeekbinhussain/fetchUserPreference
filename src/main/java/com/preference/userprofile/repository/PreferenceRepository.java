@@ -1,6 +1,6 @@
 package com.preference.userprofile.repository;
 
-import com.preference.userprofile.repository.DaoModels.Preference;
+import com.preference.userprofile.repository.daomodels.Preference;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,7 +1,7 @@
 package com.preference.userprofile.service;
 
 
-import com.preference.userprofile.repository.DaoModels.Preference;
+import com.preference.userprofile.repository.daomodels.Preference;
 import org.springframework.stereotype.Service;
 
 @Service

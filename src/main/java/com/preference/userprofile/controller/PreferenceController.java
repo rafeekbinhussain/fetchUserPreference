@@ -1,7 +1,7 @@
 package com.preference.userprofile.controller;
 
 
-import com.preference.userprofile.repository.DaoModels.Preference;
+import com.preference.userprofile.repository.daomodels.Preference;
 import com.preference.userprofile.repository.PreferenceRepository;
 import com.preference.userprofile.service.PreferenceService;
 import io.swagger.annotations.ApiOperation;
