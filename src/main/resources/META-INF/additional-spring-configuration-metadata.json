@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "toggle.user.marketing.preferences",
+      "type": "java.lang.String",
+      "description": "Description for toggle.user.marketing.preferences."
+  }
+] }

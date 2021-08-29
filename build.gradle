@@ -1,0 +1,51 @@
+plugins {
+    id 'org.springframework.boot' version '2.5.4'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'com.fetchUser'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+task psBuild(type: GradleBuild) {
+    group = 'TBPayBuild'
+    description = 'clean and build'
+    tasks = ['clean', 'build']
+}
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter:2.5.4'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.5.4'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.5.4'
+    implementation 'org.springframework.boot:spring-boot-starter-parent:2.5.4'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.5.4'
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+
+    //Swagger documentation library
+    implementation 'io.springfox:springfox-swagger2:2.9.2'
+    implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+
+    // javax validation
+    implementation 'jakarta.validation:jakarta.validation-api:3.0.0'
+
+    implementation 'org.springframework.boot:spring-boot-starter-validation:2.5.4'
+
+
+    developmentOnly 'org.springframework.boot:spring-boot-devtools:2.5.4'
+    runtimeOnly 'org.postgresql:postgresql:42.2.23.jre7'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+}
+
+test {
+    useJUnitPlatform()
+}

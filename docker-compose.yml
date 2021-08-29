@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  preferencefetch:
+    image: 'user-preference-fetch:userPreference1.0'
+    ports:
+      - "8080:8080"
+    build:
+      context: .
+    container_name: preferencefetch
+    restart: always
+    networks:
+      - preference-network
+    depends_on:
+        - preferencecreate
+
+
+networks:
+  preference-network:
