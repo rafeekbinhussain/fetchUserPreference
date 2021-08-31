@@ -6,7 +6,6 @@ import com.preference.userprofile.repository.daomodels.Preference;
 import com.preference.userprofile.service.PreferenceService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.web.servlet.error.ErrorAttributes;
 import org.springframework.stereotype.Service;
 
 import java.util.Objects;
@@ -21,12 +20,8 @@ public class PreferenceServiceImpl implements PreferenceService {
     @Autowired
     private FeatureToggle featureToggle;
 
-    @Autowired
-    private ErrorAttributes errorAttributes;
-
     @Override
     public Preference fetchUserPreferenceByUserId(String userId) {
-        Preference preference = Preference.builder().build();
         try {
             Preference preferenceDao = preferenceRepository.findByUserId(userId);
 
@@ -54,6 +49,6 @@ public class PreferenceServiceImpl implements PreferenceService {
             log.error("Unable to fetch User details due to : {}", exception.getMessage());
 
         }
-        return preference;
+        return Preference.builder().build();
     }
 }
